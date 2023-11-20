@@ -2,6 +2,8 @@
 
 ## 【한글자막】 Next.js & React - 완벽 정복 가이드 (incl. Two Paths!)
 
+### Section 1 - 시작하기
+
 - What is the NextJs
   - File-based Routing
   - Server-side Rendering
@@ -26,3 +28,16 @@
     - ReactJS Refresher
     - NextJS Summary
 
+### Section 2 - 선택 사항: React 복습
+
+- What is React.js
+  - A client-side JavaScript library
+  - All about building modern, reactive user interfaces for the web
+  - Declarative, component-focused approach
+
+- React.s Alternatives
+  - Angular
+  - Vue.js
+
+- React 18
+  - [React 18 Update Guide](https://academind.com/tutorials/react-18-update-guide)
