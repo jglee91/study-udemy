@@ -41,3 +41,20 @@
 
 - React 18
   - [React 18 Update Guide](https://academind.com/tutorials/react-18-update-guide)
+
+- React Router
+  ```bash
+  $ npm install --save react-router-dom@5
+  ```
+
+- CSS Module
+  - (file name) *.module.css
+  ```js
+  import classes from './*.module.css';
+
+  // ...
+
+  return (
+    <div className={classes.div}>...</div>
+  );
+  ```
