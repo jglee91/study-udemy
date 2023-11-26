@@ -58,3 +58,13 @@
     <div className={classes.div}>...</div>
   );
   ```
+
+- Dummy Backend
+  - use `Firebase`
+  - create Project
+  - create DB
+    - The project > Build > `Realtime Database` > create Database
+    - Start in `Test Mode`
+
+- HTTP Request
+  - fetching with `fetch` API
