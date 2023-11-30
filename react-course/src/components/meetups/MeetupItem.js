@@ -1,7 +1,22 @@
+import { useContext } from 'react';
+
 import Card from '../ui/Card';
 import classes from './MeetupItem.module.css';
+import FavoritesContext from '../../store/favorites-context';
 
-function MeetupItem({ image, title, address, description }) {
+function MeetupItem({ id, image, title, address, description }) {
+  const { add, remove, check } = useContext(FavoritesContext);
+
+  const isFavoriteMeetup = check(id);
+
+  function handleToggleFavoriteStatus() {
+    if (isFavoriteMeetup) {
+      remove(id);
+    } else {
+      add({ id, image, title, address, description });
+    }
+  }
+
   return (
     <li className={classes.item}>
       <Card>
@@ -14,7 +29,9 @@ function MeetupItem({ image, title, address, description }) {
           <p>{description}</p>
         </div>
         <div className={classes.actions}>
-          <button>To Favorites</button>
+          <button onClick={handleToggleFavoriteStatus}>
+            {isFavoriteMeetup ? 'Remove from Favorites' : 'To Favorites'}
+          </button>
         </div>
       </Card>
     </li>
